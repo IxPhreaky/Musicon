@@ -14,7 +14,7 @@
 <body>
 <div id="wrapper">
 	<header>
-    	<h1>terminal love</h1>
+    	<h1>musicon</h1>
     </header>
     
     <nav>
