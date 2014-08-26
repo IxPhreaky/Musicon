@@ -10,7 +10,7 @@
 <body>
 	<div id="wrapper">
     	<header>
-        	<img src="billeder/musicon-logo.png">
+        	<img src="billeder/musicon-logo.png" id="logo">
                 <nav>
             		<ul>
                 		<li></li>

@@ -12,3 +12,13 @@
 	background-color: #FFF7C9;
 	margin: 10px auto auto auto;
 }
+
+header {
+	width: 955px;
+	height: 125px;
+	background-color: #8D91A3;
+}
+
+#logo {
+	margin: 12px 0px 0px 427px;	
+}
