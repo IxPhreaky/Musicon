@@ -8,7 +8,7 @@
 
 #wrapper {
 	width: 955px;
-	min-height: 600px;
+	height: 725px;
 	background-color: #FFF7C9;
 	margin: 10px auto auto auto;
 }
@@ -48,7 +48,7 @@ a {
 
 #main {
 	width: 955px;
-	height: 400px;
+	min-height: 400px;
 	margin: 15px 0 0 0;
 	background-color: #C0CC8C;
 }
@@ -58,7 +58,7 @@ article {
 	height: 175px;
 	background-color: #FFF7C9;
 	float: left;
-	margin: 205px 0px 0px 15px;
+	margin: 158px 0px 0px 15px;
 }
 
 h3 {
@@ -66,6 +66,13 @@ h3 {
 	font-weight: 250;
 	color: #8D91A3;
 	margin: 0px 0px 0px 5px;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	text-align: center;
 }
 
 footer {
@@ -95,4 +102,12 @@ footer p {
 	background-color: #FFF7C9;
 	float: right;
 	margin: 20px 20px 20px 0px;
+}
+
+.artikel {
+	width: 915px;
+	height: 170px;
+	background-color: #FFF7C9;
+	float: left;
+	margin: 20px 0px 0px 20px;
 }

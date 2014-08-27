@@ -8,7 +8,8 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 </head>
-	<article>
+	<h1>Musicon Magasinet</h1>
+    <article>
 		<h3>Nyheds overskrift</h3>
     </article>
                 

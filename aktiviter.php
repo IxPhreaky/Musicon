@@ -8,5 +8,12 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 </head>
+	<article class="artikel">
+		<h3>Aktivitets overskrift</h3>
+    </article>
+                
+    <article class="artikel">
+         <h3>Aktivitets overskrift</h3>
+   	</article>	
 	
 </html>
