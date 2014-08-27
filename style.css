@@ -8,17 +8,73 @@
 
 #wrapper {
 	width: 955px;
-	height: 600px;
+	height: 725px;
 	background-color: #FFF7C9;
 	margin: 10px auto auto auto;
 }
 
 header {
 	width: 955px;
-	height: 125px;
+	height: 160px;
 	background-color: #8D91A3;
 }
 
 #logo {
-	margin: 12px 0px 0px 427px;	
+	margin: 5px 0px 0px 427px;	
+}
+
+nav {
+	float: right;	
+}
+
+ul {
+	list-style: none;	
+}
+
+li {
+	float: left;
+	margin: 0px 20px 5px 0px;
+	background-color: #C0CC8C;
+	border: 2px #FFF7C9 solid;
+}
+
+a {
+	text-decoration: none;
+	font-size: 26px;
+	font-family: 'Oswald', sans-serif;
+	color: #000000;
+	margin: 0 2px 0 2px;
+}
+
+#main {
+	width: 955px;
+	height: 400px;
+	margin: 15px 0 0 0;
+	background-color: #C0CC8C;
+}
+
+article {
+	width: 300px;
+	height: 175px;
+	background-color: #FFF7C9;
+	float: left;
+	margin: 205px 0px 0px 15px;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 250;
+	color: #8D91A3;
+	margin: 0px 0px 0px 5px;
+}
+
+footer {
+	width: 955px;
+	height: 160px;
+	margin: 15px 0px 0px 0px;
+	background-color: #899943;
+}
+
+p {
+		
 }
