@@ -111,3 +111,80 @@ footer p {
 	float: left;
 	margin: 20px 0px 0px 20px;
 }
+fieldset {
+	height: 420px;
+	width: 250px;
+	margin:auto;
+    border: 0;
+}
+	
+
+label {
+	float: left;
+	clear: left;
+	display: block;
+	width: 120px;
+	height: 24px;
+	line-height: 24px;
+	margin: 10px 10px 0 15px;
+	background-color: #888;
+	color: #fff;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 5px;
+	
+	
+	
+}
+
+input {
+	float: left;
+	clear: right;
+	display: block;
+	width: 200px;
+	height: 20px;
+	margin: 10px 0 0 0;
+	color: #888;
+	padding: 0 0 0 5px;
+		border: 1px solid;
+	border-radius: 5px;
+	
+}
+
+textarea {
+	height: 100px;
+	width: 150px;
+	float:left;
+	margin-top: 10px;
+	clear:both;
+		border: 1px solid;
+	border-radius: 5px;
+	
+}
+
+form {
+	height: 350px;
+	width: 300px;
+	float:left;
+	
+}
+
+fieldset ul {
+	list-style:none;
+	
+}
+
+fieldset li {
+	float:left;
+}
+
+button {
+	float: left;
+	height: 30px;
+	width: 80px;
+	background-color: #888;
+	color: #fff;
+	border: 1px solid;
+	border-radius: 5px;
+	margin: 25px 0 0 0;
+}
