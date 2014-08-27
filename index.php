@@ -52,11 +52,16 @@
              ?>
        	</div>
 			<footer>
-            	<p>Kontaktoplysninger</p>
-                <p>Adresse:</p>
-                <p>Email:</p>
-                <p>Hjemmeside</p>
-                <p>Email:</p>
+            	<article>
+                	<p>Kontaktoplysninger</p>
+                	<p>Adresse:</p>
+               	 	<p>Email:</p>
+               		<p>Hjemmeside</p>
+                	<p>Email:</p>
+                </article>
+                	<div id="admin">
+                    	
+                    </div>
 			</footer>
 </div>
 

@@ -8,7 +8,7 @@
 
 #wrapper {
 	width: 955px;
-	height: 725px;
+	min-height: 600px;
 	background-color: #FFF7C9;
 	margin: 10px auto auto auto;
 }
@@ -34,7 +34,7 @@ ul {
 li {
 	float: left;
 	margin: 0px 20px 5px 0px;
-	background-color: #C0CC8C;
+	background-color: #899943;
 	border: 2px #FFF7C9 solid;
 }
 
@@ -72,9 +72,27 @@ footer {
 	width: 955px;
 	height: 160px;
 	margin: 15px 0px 0px 0px;
-	background-color: #899943;
+	background-color: #C0CC8C;
 }
 
-p {
-		
+footer article {
+	width: 300px;
+	height: 160px;
+	float: left;
+	margin:0;
+	background-color: transparent;
+}
+
+footer p {
+	font-family: 'Oswald', sans-serif;
+	color: #8D91A3;
+	margin: 5px 0px 0px 5px;
+}
+
+#admin {
+	width: 450px;
+	height: 120px;
+	background-color: #FFF7C9;
+	float: right;
+	margin: 20px 20px 20px 0px;
 }
