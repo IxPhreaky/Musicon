@@ -8,7 +8,43 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 </head>
-
+<?php
+				
+					$con = mysql_connect("localhost", "root",""); /*Her connecter jeg til Local host*/
+					$db = mysql_select_db("kontaktform",$con); /*Her Specificere jeg databasen*/
+					if(!$con){	
+						die("Fejl i oprettelsen til databasen,tjek domain, username eller pw" . mysql_error());		}
+						/* Her oprettes forbindelse til Databasen db*/
+						
+					/*Her vælger jeg at Data basen skal dø hvis der ikke bliver oprettet forbindelse*/	
+					if (!$db)
+					{ die ("Ingen database oprettet!" . mysql_error());	} 
+						
+						/* Danske bogstaver æøå */
+						mysql_query("SET NAMES utf8"); 
+						mysql_query("SET character_set_results=’utf8'");
+						
+					
+					if(isset($_POST['submit'])){ /*Her tjekker vi om submit knappen bliver trykket */
+						$Navn = $_POST['Navn']; /* Den her tager input name fra formularen og laver dem om til variabler*/
+						$Mobil = $_POST['Mobil'];
+						$Email = $_POST['Email'];
+						$Besked = $_POST['Besked'];
+						
+                    /*Her tjekker vi om alle felterne er udfyldt */
+					if(!$Navn || !$Mobil|| !$Email ||!$Besked){ 
+					echo "udfyld venligst alle felter<br/>";
+					}
+					
+				/*her tager den dataen som er blevet inskrevet i formularen og indsætter dem i tablen i data basen*/			
+						mysql_query("INSERT INTO `kontaktform`.`kontaktliste` (`Navn`, `Mobil`, `Email`,`Besked`)
+							VALUES('$Navn', '$Mobil', '$Email','$Besked')"
+						);
+				
+					
+				}
+				
+				?>
 
 				<fieldset>
 <form method="post" action="">
