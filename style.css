@@ -176,6 +176,7 @@ fieldset ul {
 
 fieldset li {
 	float:left;
+	margin: 10px 0px 0px 0px;
 }
 
 button {
