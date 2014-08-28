@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Kontakt</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="billeder/favicon (2).ico">
+<link href="../../../Users/331232/Desktop/Musicon/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../../../Users/331232/Desktop/Musicon/billeder/favicon (2).ico">
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 </head>
