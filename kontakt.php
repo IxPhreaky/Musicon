@@ -11,7 +11,7 @@
 <?php
 				
 					$con = mysql_connect("localhost", "root",""); /*Her connecter jeg til Local host*/
-					$db = mysql_select_db("kontaktform",$con); /*Her Specificere jeg databasen*/
+					$db = mysql_select_db("musicon",$con); /*Her Specificere jeg databasen*/
 					if(!$con){	
 						die("Fejl i oprettelsen til databasen,tjek domain, username eller pw" . mysql_error());		}
 						/* Her oprettes forbindelse til Databasen db*/
@@ -37,7 +37,7 @@
 					}
 					
 				/*her tager den dataen som er blevet inskrevet i formularen og indsætter dem i tablen i data basen*/			
-						mysql_query("INSERT INTO `kontaktform`.`kontaktliste` (`Navn`, `Mobil`, `Email`,`Besked`)
+						mysql_query("INSERT INTO `musicon`.`kontaktliste` (`Navn`, `Mobil`, `Email`,`Besked`)
 							VALUES('$Navn', '$Mobil', '$Email','$Besked')"
 						);
 				
