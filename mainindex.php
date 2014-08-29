@@ -9,15 +9,53 @@
 
 </head>
 	<h1>Musicon Magasinet</h1>
-    <article>
-		<h3>Nyheds overskrift</h3>
-    </article>
+    
+        	<?php
+            $con = mysql_connect("localhost", "root",""); /*Her connecter jeg til Local host*/
+					$db = mysql_select_db("musicon",$con); /*Her Specificere jeg databasen*/
+					if(!$con){	
+						die("Fejl i oprettelsen til databasen,tjek domain, username eller pw" . mysql_error());		}
+						/* Her oprettes forbindelse til Databasen db*/
+						
+					/*Her vælger jeg at Data basen skal dø hvis der ikke bliver oprettet forbindelse*/	
+					if (!$db)
+					{ die ("Ingen database oprettet!" . mysql_error());	} 
+						
+						/* Danske bogstaver æøå */
+						mysql_query("SET NAMES utf8"); 
+						mysql_query("SET character_set_results=’utf8'");
+			?>
+			
+	
+    		<?php
+    $sql = "SELECT * FROM nyheder";
+    $result = mysql_query ($sql) or die (mysql_error());
+ 
+    while ($row = mysql_fetch_assoc ($result))
+    {
+         echo "<div class='nyhed'>";
+            echo "<h4>$row[titel]</h4>";
+            echo "<p>$row[dato]</p>";
+            echo "<p>$row[tekst]</p>";
+       	echo "</div>";
+    }
+    ?>
+  
                 
-    <article>
-         <h3>Nyheds overskrift</h3>
-   	</article>
-                
-    <article>
-         <h3>Nyheds overskrift</h3>
-    </article>
+    
+         	 <?php
+			
+             while ($row = mysql_fetch_assoc ($result))
+    {
+         echo "<div class='nyhed'>";
+            echo "<h4>$row[titel]</h4>";
+            echo "<p>$row[dato]</p>";
+            echo "<p>$row[tekst]</p>";
+			echo "</div>";
+       
+    }
+    ?>
+   	
+         	
+    
 </html>
