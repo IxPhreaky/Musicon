@@ -28,7 +28,7 @@
 			
 	
     		<?php
-    $sql = "SELECT * FROM nyheder";
+    $sql = "SELECT * FROM `nyheder` ORDER BY `dato` DESC LIMIT 3";
     $result = mysql_query ($sql) or die (mysql_error());
  
     while ($row = mysql_fetch_assoc ($result))
