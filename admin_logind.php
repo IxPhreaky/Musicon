@@ -1,35 +1,43 @@
-<h2>Admin Logind</h2>
 
-<form name="login" action="" method="post">
-    Brugernavn<input type="text" name="brugernavn" />
-    <br />
-    Kodeord<input type="password"  name="kodeord" />
-    <br />
-    <input type="submit" name="logind" value="Log ind" />
-</form>
-
+<html>
+<head>
+ 
+</head>
+<body>
+<h1>Velkomme Johan</h1>
 <?php
-
-if(isset($_POST['logind']))
-{	
-	$mitbrugernavn = $_POST['brugernavn']; 
-	$mitkodeord = $_POST['kodeord'];
-
-	$sql = "SELECT * FROM tbl_brugere WHERE brugernavn='$mitbrugernavn' AND adgangskode='$mitkodeord'";
-	
-	$result = mysqli_query($sql);
-	
-	
-	{	
-		$raekke=mysqli_fetch_array($result);
-
-		$_SESSION['brugernavnloggetind']=$raekke['brugernavn'];
-		$_SESSION['brugerIDloggetind']=$raekke['id'];
-		header('Location: index.php');
-	}
-	
-	{
-		echo "Der er fejl i brugernavn eller kodeord";
-	}	
-}
+if (!isset($_POST['submit'])){
 ?>
+<!-- The HTML login form -->
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+        Username: <input type="text" name="username" /><br />
+        Password: <input type="password" name="password" /><br />
+ 
+        <input type="submit" name="submit" value="Login" />
+    </form>
+<?php
+} else {
+    require_once("index.php");
+    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    # check connection
+    if ($mysqli->connect_errno) {
+        echo "<p>MySQL error no {$mysqli->connect_errno} : {$mysqli->connect_error}</p>";
+        exit();
+    }
+ 
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+ 
+    $sql = "SELECT * from users WHERE username LIKE '{$username}' AND password LIKE '{$password}' LIMIT 1";
+    $result = $mysqli->query($sql);
+    if (!$result->num_rows == 1) {
+        echo "<p>Invalid username/password combination</p>";
+    } else {
+        echo "<p>Logged in successfully</p>";
+        // do stuffs
+    }
+}
+?>        
+</body>
+</html>
+
